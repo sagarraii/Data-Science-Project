@@ -1,0 +1,28 @@
+version: "1.0"
+description: "Schema definition for data science project"
+
+tables:
+  - name: "example_table"
+    description: "Example table structure"
+    columns:
+      - name: "id"
+        type: "integer"
+        required: true
+        description: "Unique identifier"
+      - name: "name"
+        type: "string"
+        required: true
+        description: "Entity name"
+      - name: "timestamp"
+        type: "datetime"
+        required: false
+        description: "Record timestamp"
+      - name: "value"
+        type: "float"
+        required: false
+        description: "Numeric value"
+
+metadata:
+  created_date: "2024-01-01"
+  author: "Data Science Team"
+  status: "draft"
